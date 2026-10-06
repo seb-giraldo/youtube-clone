@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <Navbar setSidebar={setSidebar} />
+      <Navbar setSidebar={setSidebar} setCategory={setCategory} />
       <Routes>
         <Route
           path="/"

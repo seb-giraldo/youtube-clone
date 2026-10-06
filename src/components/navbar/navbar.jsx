@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import menuIcon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
 import searchIcon from "../../assets/search.png";
@@ -9,8 +9,13 @@ import moreIcon from "../../assets/more.png";
 import notificationIcon from "../../assets/notification.png";
 import profileIcon from "../../assets/jack.png";
 
-function Navbar({ setSidebar }) {
+function Navbar({ setSidebar, setCategory }) {
   const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    setCategory(0);
+    navigate("/");
+  };
 
   return (
     <nav className="flex-div">
@@ -21,9 +26,13 @@ function Navbar({ setSidebar }) {
           alt=""
           onClick={() => setSidebar((prev) => (prev === false ? true : false))}
         />
-        <Link to="/">
-          <img src={logo} className="logo" alt="" />
-        </Link>
+        <img
+          src={logo}
+          className="logo"
+          alt=""
+          onClick={handleLogoClick}
+          style={{ cursor: "pointer" }}
+        />
       </div>
       <div className="nav-middle flex-div">
         <div className="search-box flex-div">
