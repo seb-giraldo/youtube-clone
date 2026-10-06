@@ -34,7 +34,9 @@ function Search({ sidebar, category, setCategory }) {
         category={category}
         setCategory={setCategory}
       />
-      <div className="container large-container">
+      <div
+        className={`container container-animation ${sidebar ? "" : "large-container"}`}
+      >
         <div className="feed">
           {searchList &&
             searchList
