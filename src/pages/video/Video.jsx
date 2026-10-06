@@ -4,10 +4,8 @@ import PlayVideo from "../../components/PlayVideo/PlayVideo";
 import Recommended from "../../components/Recommended/Recommended";
 import { useParams } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import { useState } from "react";
 
-function Video({ sidebar }) {
-  const [category, setCategory] = useState(0);
+function Video({ sidebar, category, setCategory }) {
   const { videoId, categoryId } = useParams();
 
   return (

@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import "./Home.css";
 import Sidebar from "../../components/Sidebar/Sidebar.jsx";
 import Feed from "../../components/Feed/Feed.jsx";
 
-function Home({ sidebar }) {
-  const [category, setCategory] = useState(0);
-
+function Home({ sidebar, category, setCategory }) {
   return (
     <div>
       <Sidebar
