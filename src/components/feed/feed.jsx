@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { API_KEY } from "../../data.js";
-import "./Feed.css";
+import "./feed.css";
 import { convertValue } from "../../data.js";
 import moment from "moment";
 import thumbnail1 from "../../assets/thumbnail1.png";

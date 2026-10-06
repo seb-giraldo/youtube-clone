@@ -1,7 +1,7 @@
 import React from "react";
 import { API_KEY, convertValue } from "../../data";
 import { useState, useEffect } from "react";
-import "./Recommended.css";
+import "./recommended.css";
 import { Link } from "react-router-dom";
 import thumbnail1 from "../../assets/thumbnail1.png";
 import thumbnail2 from "../../assets/thumbnail2.png";

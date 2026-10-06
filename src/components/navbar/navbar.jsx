@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./navbar.css";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import menuIcon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";

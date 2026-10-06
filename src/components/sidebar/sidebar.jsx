@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Sidebar.css";
+import "./sidebar.css";
 import home from "../../assets/home.png";
 import gameIcon from "../../assets/game_icon.png";
 import automobiles from "../../assets/automobiles.png";
@@ -111,23 +111,38 @@ function Sidebar({ sidebar, category, setCategory }) {
       </div>
       <div className="subscribed-list">
         <h3>Subscribed</h3>
-        <div className={`side-link disabled`} onClick={() => handleCategoryClick(0)}>
+        <div
+          className={`side-link disabled`}
+          onClick={() => handleCategoryClick(0)}
+        >
           <img src={jack} alt="" />
           <p>Fireship</p>
         </div>
-        <div className={`side-link disabled`} onClick={() => handleCategoryClick(0)}>
+        <div
+          className={`side-link disabled`}
+          onClick={() => handleCategoryClick(0)}
+        >
           <img src={simon} alt="" />
           <p>Audiotree</p>
         </div>
-        <div className={`side-link disabled`} onClick={() => handleCategoryClick(0)}>
+        <div
+          className={`side-link disabled`}
+          onClick={() => handleCategoryClick(0)}
+        >
           <img src={tom} alt="" />
           <p>KEXP</p>
         </div>
-        <div className={`side-link disabled`} onClick={() => handleCategoryClick(0)}>
+        <div
+          className={`side-link disabled`}
+          onClick={() => handleCategoryClick(0)}
+        >
           <img src={megan} alt="" />
           <p>Rick Beato</p>
         </div>
-        <div className={`side-link disabled`} onClick={() => handleCategoryClick(0)}>
+        <div
+          className={`side-link disabled`}
+          onClick={() => handleCategoryClick(0)}
+        >
           <img src={cameron} alt="" />
           <p>Doctor Mix</p>
         </div>

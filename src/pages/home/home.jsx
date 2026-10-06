@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
-import Sidebar from "../../components/Sidebar/Sidebar.jsx";
-import Feed from "../../components/Feed/Feed.jsx";
+import "./home.css";
+import Sidebar from "../../components/sidebar/sidebar.jsx";
+import Feed from "../../components/feed/feed.jsx";
 
 function Home({ sidebar, category, setCategory }) {
   return (
@@ -11,7 +11,9 @@ function Home({ sidebar, category, setCategory }) {
         category={category}
         setCategory={setCategory}
       />
-      <div className={`container container-animation ${sidebar ? "" : "large-container"}`}>
+      <div
+        className={`container container-animation ${sidebar ? "" : "large-container"}`}
+      >
         <Feed category={category} />
       </div>
     </div>

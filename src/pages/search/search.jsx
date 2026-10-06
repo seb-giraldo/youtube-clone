@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { API_KEY } from "../../data";
 import { useSearchParams, Link } from "react-router-dom";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import Sidebar from "../../components/sidebar/sidebar.jsx";
 import moment from "moment";
 
 function Search({ sidebar, category, setCategory }) {
@@ -20,7 +20,6 @@ function Search({ sidebar, category, setCategory }) {
     }
   }
 
-
   useEffect(() => {
     fetchSearchList();
   }, [searchQuery]);
@@ -30,7 +29,11 @@ function Search({ sidebar, category, setCategory }) {
 
   return (
     <div>
-      <Sidebar sidebar={sidebar} category={category} setCategory={setCategory} />
+      <Sidebar
+        sidebar={sidebar}
+        category={category}
+        setCategory={setCategory}
+      />
       <div className="container large-container">
         <div className="feed">
           {searchList &&
@@ -45,9 +48,7 @@ function Search({ sidebar, category, setCategory }) {
                   >
                     <img src={item.snippet.thumbnails.medium.url} alt="" />
                     <h2>{item.snippet.title}</h2>
-                    <pre>
-                      {moment(item.snippet.publishedAt).fromNow()}
-                    </pre>
+                    <pre>{moment(item.snippet.publishedAt).fromNow()}</pre>
                     <h3>{item.snippet.channelTitle}</h3>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -1,4 +1,4 @@
-import "./PlayVideo.css";
+import "./playvideo.css";
 import { useState, useEffect } from "react";
 import { API_KEY, convertValue } from "../../data";
 import DOMPurify from "dompurify";
@@ -114,11 +114,7 @@ function PlayVideo() {
         <button>Subscribe</button>
       </div>
       <div className="vid-description">
-        <p>
-          {apiData
-            ? apiData.snippet.description
-            : "Description Loading"}
-        </p>
+        <p>{apiData ? apiData.snippet.description : "Description Loading"}</p>
         <hr />
         <h4>
           {apiData
